@@ -1,0 +1,100 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+
+<body class="bg-light">
+
+    {% include 'header.html' %}
+    <style>
+        .bgimg {
+            background-image:url("{% static 'img/contact_hero.jpg' %}");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center top;
+            width: 100%;
+            height: 351px;
+        }
+    </style>
+    <div class="bgimg">
+        <div class="d-flex align-items-center" style="height: 351px;">
+            <div class="my-auto pl-5">
+                <h1 class="text-light font-weight-bold heading" style="font-size: 50px !important;">Contact Us</h1>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="container py-5">
+        
+        <div class="mb-5 border">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d990.484171485048!2d39.24580022916923!3d-6.777560767960736!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x185c4c22eb59844b%3A0x78799fee6eda1567!2s19%20Wakatibado%20St%2C%20Dar%20es%20Salaam!5e0!3m2!1sen!2stz!4v1597496562392!5m2!1sen!2stz" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+
+        <div class="row">
+            <div class="col-xl-8 col-lg-8 col-md-6 col-sm-12 col-xs-12">
+                <h2 class="heading">Get in Touch</h2>
+                <div class="mb-3" style="width: 90px; height:3px; background-color:#c6a16e;"></div>
+                <form action="">
+                    <div class="form-row">
+                        <div class="col-12">
+                            <div class="form-group">
+                                <textarea class="form-control rounded-0" id="exampleFormControlTextarea1" placeholder="Enter Message" rows="5"></textarea>
+                            </div>
+                        </div>
+                        <div class=" col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <div class="form-group">
+                                <input type="text" class=" form-control rounded-0" placeholder="Full Name">
+                            </div>
+                        </div>
+                        <div class=" col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                            <div class="form-group">
+                                <input type="email" class=" form-control rounded-0" placeholder="Email" >
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn px-5 py-2 rounded-0 send_btn">SEND</button>
+                </form>
+
+            </div>
+
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12">
+                <div class=" d-flex flex-column mt-5 ml-5">
+                    <div class="d-flex flex-row">
+                        <img src="{% static 'icon/home-run.png' %}" alt="" width="30px" height="30px">
+                        <div class="mx-3">                                
+                            <h3 class=" heading" style="font-size: 16px;">Buttonwood, California.</h3>
+                            <p class="text-muted">Rosemead, CA 91770</p>
+                        </div>
+
+                    </div>
+                    <div class="d-flex flex-row">
+                        <img src="{% static 'icon/cellphone.png' %}" alt="" width="30px" height="30px">
+                        <div class="mx-3">   
+                        <h3 class=" heading" style="font-size: 16px;">+1 253 565 2365</h3>
+                        <p class="text-muted">Mon to Fri 9am to 6pm</p>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-row">
+                        <img src="{% static 'icon/contact.png' %}" alt="" width="30px" height="30px">
+                        <div class="mx-3">                                
+                            <h3 class=" heading" style="font-size: 16px;">support@colorlib.com</h3>
+                            <p class="text-muted">Send us your query anytime!</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {% include 'footer.html' %}
+
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+{% endblock %}

@@ -1,0 +1,98 @@
+body {
+    background: black; 
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+  
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.link-on-hover {
+    color: black;
+}
+
+.link-on-hover:hover {
+    color: #c6a16e !important;
+}
+
+div .row {
+    overflow-x: hidden; 
+    overflow-y: hidden;
+}
+
+p,
+a {
+    font-family: 'Montserrat' !important;
+    font-size: 16px !important;
+}
+
+::placeholder {
+    font-family: 'Montserrat' !important;
+}
+
+ul li {
+    font-family: 'Montserrat' !important;
+    font-size: 16px !important;
+}
+
+.font-color {
+    color: #c6a16e !important;
+}
+
+.heading {
+    font-family: 'Josefin Sans' !important;
+    font-size: 35px;
+}
+
+.zoom img {
+    -webkit-transition: all 1s ease;
+    /* Safari and Chrome */
+    -moz-transition: all 1s ease;
+    /* Firefox */
+    -ms-transition: all 1s ease;
+    /* IE 9 */
+    -o-transition: all 1s ease;
+    /* Opera */
+    transition: all 1s ease;
+}
+
+.zoom img:hover {
+    -webkit-transform: scale(1.25);
+    /* Safari and Chrome */
+    -moz-transform: scale(1.25);
+    /* Firefox */
+    -ms-transform: scale(1.25);
+    /* IE 9 */
+    -o-transform: scale(1.25);
+    /* Opera */
+    transform: scale(1.25);
+}
+
+.send_btn {
+    color:#c6a16e !important;
+    border: 1px solid #c6a16e !important;
+}
+
+.send_btn:hover {
+    color:#ffffff !important;
+    border: 1px solid #c6a16e !important;
+    background: #c6a16e !important;
+}
+
+.footer-hover {
+    padding: 5px;
+    color:white;
+}
+.footer-hover:hover {
+    padding-left: 10px;
+    padding-right: 10px;
+    transition: all .5s;
+    background-color:#fde3bf;
+    color:#c6a16e !important;
+}

@@ -1,0 +1,226 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+
+<body>
+
+    {% include 'header.html' %}
+    <style>
+        .bgimg {
+            background-image:url("{% static 'img/about.jpg' %}");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center top;
+            width: 100%;
+            height: 351px;
+        }
+    </style>
+    <div class="bgimg">
+        <div class="d-flex align-items-center" style="height: 351px;">
+            <div class="my-auto pl-5">
+                <h1 class="text-light font-weight-bold heading" style="font-size: 50px !important;">About</h1>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="container my-5">
+
+        <div class="row">
+
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 p-0" data-aos="fade-down">
+                <div class="p-5">
+                    <h3 class="heading font-color">Who We Are?</h3>
+                    <p class=" text-light">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore
+                        et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+                        ut
+                        aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+                        culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 p-0" data-aos="fade-up">
+
+                <img src="{% static 'img/footer_bg.jpg' %}" alt="" width="100%" height="360" style="object-fit: cover;">
+            </div>
+
+        </div>
+
+
+        <div class="row mt-5">
+
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 p-0" data-aos="fade-up-right">
+
+                <img src="{% static 'img/footer_bg.jpg' %}" alt="" width="100%" height="360" style="object-fit: cover;">
+
+            </div>
+
+            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-xs-12 p-0" style="background-color: #c6a16e;" data-aos="fade-up-left">
+                <div class="p-5">
+                    <h3 class=" heading">What We Do?</h3>
+                    <p class=" text-light">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+                        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                        non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class=" container-fluid px-md-5 bg-light">
+        <div class=" pt-5">
+            <h3 class="text-center" style="color: #c6a16e; font-family: 'Great Vibes';font-size: 40px;"
+                data-aos="fade-up">
+                Our Mission</h3>
+            <h2 class="text-center font-weight-bold"
+                style="color: #c6a16e; font-family: 'Josefin Sans';font-size: 35px;" data-aos="fade-down">What Drives Us
+            </h2>
+        </div>
+
+        <p class=" text-center pb-5 px-md-5 text-muted" style="font-size: 22px !important;" data-aos="fade-up">
+            &#8220;
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.
+            &#8221;
+        </p>
+
+    </div>
+
+    <div class="container my-5">
+        <div class=" mb-5">
+            <h3 class="text-center" style="color: #c6a16e; font-family: 'Great Vibes';font-size: 40px;"
+                data-aos="fade-up">
+                Our Team</h3>
+            <h2 class="text-center font-weight-bold"
+                style="color: #c6a16e; font-family: 'Josefin Sans';font-size: 35px;" data-aos="fade-down">Meet our
+                Member</h2>
+        </div>
+
+        <div class="row">
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-5" data-aos="fade-up-right">
+                <div class="d-flex justify-content-center">
+                    <img src="{% static 'img/author.png' %}" alt="" width="200" height="200" class=" rounded-circle">
+                </div>
+                <div class=" d-flex justify-content-center">
+                    <div class="" style="max-width: 300px;">
+                        <h4 class="pt-3 heading text-light text-center" style="font-size: 22px !important;">Full Name
+                        </h4>
+                        <p class=" text-muted pt- text-center">
+                            CEO
+                        </p>
+                        <div class="d-flex flex-row justify-content-center">
+
+                            <div class="mx-2">
+                                <a href="#">
+                                    <i class="fab fa-instagram fa-lg my-2 m-2 font-color"></i>
+                                </a>
+                            </div>
+                            <div class=" mr-2">
+                                <a href="#">
+                                    <i class="fab fa-twitter fa-lg m-2 font-color"></i>
+                                </a>
+                            </div>
+                            <div class=" mr-2">
+                                <a href="#">
+                                    <i class="fab fa-facebook fa-lg m-2 font-color"></i>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-5" data-aos="fade-down">
+                <div class="d-flex justify-content-center">
+                    <img src="{% static 'img/author.png' %}" alt="" width="200" height="200" class=" rounded-circle">
+                </div>
+                <div class=" d-flex justify-content-center">
+                    <div class="" style="max-width: 300px;">
+                        <h4 class="pt-3 heading text-light text-center" style="font-size: 22px !important;">Full Name
+                        </h4>
+                        <p class=" text-muted pt- text-center">
+                            Designer
+                        </p>
+                        <div class="d-flex flex-row justify-content-center">
+
+                            <div class="mx-2">
+                                <a href="#">
+                                    <i class="fab fa-instagram fa-lg my-2 m-2 font-color"></i>
+                                </a>
+                            </div>
+                            <div class=" mr-2">
+                                <a href="#">
+                                    <i class="fab fa-twitter fa-lg m-2 font-color"></i>
+                                </a>
+                            </div>
+                            <div class=" mr-2">
+                                <a href="#">
+                                    <i class="fab fa-facebook fa-lg m-2 font-color"></i>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-5" data-aos="fade-up-left">
+                <div class="d-flex justify-content-center">
+                    <img src="{% static 'img/author.png' %}" alt="" width="200" height="200" class=" rounded-circle">
+                </div>
+                <div class=" d-flex justify-content-center">
+                    <div class="" style="max-width: 300px;">
+                        <h4 class="pt-3 heading text-light text-center" style="font-size: 22px !important;">Full Name
+                        </h4>
+                        <p class=" text-muted pt- text-center">
+                            Tailor
+                        </p>
+                        <div class="d-flex flex-row justify-content-center">
+
+                            <div class="mx-2">
+                                <a href="#">
+                                    <i class="fab fa-instagram fa-lg my-2 m-2 font-color"></i>
+                                </a>
+                            </div>
+                            <div class=" mr-2">
+                                <a href="#">
+                                    <i class="fab fa-twitter fa-lg m-2 font-color"></i>
+                                </a>
+                            </div>
+                            <div class=" mr-2">
+                                <a href="#">
+                                    <i class="fab fa-facebook fa-lg m-2 font-color"></i>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    {% include 'footer.html' %}
+
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+{% endblock %}

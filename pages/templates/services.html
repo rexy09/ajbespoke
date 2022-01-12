@@ -1,0 +1,140 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+
+<body>
+
+    {% include 'header.html' %}
+    <style>
+        .bgimg {
+            background-image:url("{% static 'img/gallery.jpg' %}");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center top;
+            width: 100%;
+            height:351px;
+        }
+    </style>
+    <div class="bgimg">
+        <div class="d-flex align-items-center" style="height: 351px;">
+            <div class="my-auto pl-5">
+                <h1 class="text-light font-weight-bold heading" style="font-size: 50px !important;">Services</h1>
+            </div>
+            
+        </div>
+        
+    </div>
+
+    <div class="container my-5">
+
+        <div class=" mb-5">
+            <h3 class="text-center" style="color: #c6a16e; font-family: 'Great Vibes';font-size: 40px;"
+                data-aos="fade-up">
+                What we offer</h3>
+            <h2 class="text-center font-weight-bold"
+                style="color: #c6a16e; font-family: 'Josefin Sans';font-size: 35px;" data-aos="fade-down">What
+                we offer our Clients</h2>
+        </div>
+
+        <div class="row">
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-3" data-aos="fade-up-right">
+                <div class="d-flex justify-content-center zoom">
+                    <img class="" src="{% static 'img/offers1.jpg' %}" alt="" width="300" height="340">
+                </div>
+                <div class=" d-flex justify-content-center">
+                    <div class="" style="max-width: 300px;">
+                        <h3 class="pt-5 heading font-color zoom">Perfect Body Measurements</h3>
+                        <p class=" text-muted pt-2" style="font-family: 'Montserrat';font-size: 16px;">
+                            Aorem Epsum Solor sit amet, consectetur adipiscing elited dsfo eiusmod tecsmpor
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-3" data-aos="fade-down">
+                <div class="d-flex justify-content-center zoom">
+                    <img src="{% static 'img/offers2.jpg' %}" alt="" width="300" height="340">
+                </div>
+                <div class=" d-flex justify-content-center">
+                    <div class="" style="max-width: 300px;">
+                        <h3 class="pt-5 heading font-color">Premioum Style Cutting-out</h3>
+                        <p class=" text-muted pt-2">
+                            Aorem Epsum Solor sit amet, consectetur adipiscing elited dsfo eiusmod tecsmpor
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-3" data-aos="fade-up-left">
+                <div class="d-flex justify-content-center zoom">
+                    <img src="{% static 'img/offers3.jpg' %}" alt="" width="300" height="340">
+                </div>
+                <div class=" d-flex justify-content-center">
+                    <div class="" style="max-width: 300px;">
+                        <h3 class="pt-5 heading font-color">Restoration with Sincerity
+                        </h3>
+                        <p class=" text-muted pt-2">
+                            Aorem Epsum Solor sit amet, consectetur adipiscing elited dsfo eiusmod tecsmpor
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-3" data-aos="fade-up-right">
+                <div class="d-flex justify-content-center zoom">
+                    <img class="" src="{% static 'img/offers1.jpg' %}" alt="" width="300" height="340">
+                </div>
+                <div class=" d-flex justify-content-center">
+                    <div class="" style="max-width: 300px;">
+                        <h3 class="pt-5 heading font-color zoom">Perfect Body Measurements</h3>
+                        <p class=" text-muted pt-2" style="font-family: 'Montserrat';font-size: 16px;">
+                            Aorem Epsum Solor sit amet, consectetur adipiscing elited dsfo eiusmod tecsmpor
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-3" data-aos="fade-down">
+                <div class="d-flex justify-content-center zoom">
+                    <img src="{% static 'img/offers2.jpg' %}" alt="" width="300" height="340">
+                </div>
+                <div class=" d-flex justify-content-center">
+                    <div class="" style="max-width: 300px;">
+                        <h3 class="pt-5 heading font-color">Premioum Style Cutting-out</h3>
+                        <p class=" text-muted pt-2">
+                            Aorem Epsum Solor sit amet, consectetur adipiscing elited dsfo eiusmod tecsmpor
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-4 col-lg-4 col-md-6 col-sm-12 col-xs-12 mb-3" data-aos="fade-up-left">
+                <div class="d-flex justify-content-center zoom">
+                    <img src="{% static 'img/offers3.jpg' %}" alt="" width="300" height="340">
+                </div>
+                <div class=" d-flex justify-content-center">
+                    <div class="" style="max-width: 300px;">
+                        <h3 class="pt-5 heading font-color">Restoration with Sincerity
+                        </h3>
+                        <p class=" text-muted pt-2">
+                            Aorem Epsum Solor sit amet, consectetur adipiscing elited dsfo eiusmod tecsmpor
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    {% include 'footer.html' %}
+
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+{% endblock %}
